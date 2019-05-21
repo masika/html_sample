@@ -1,0 +1,181 @@
+@charset "UTF-8";
+.txt_hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #231815;
+  letter-spacing: 0.1em;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 30px 1vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  color: #2e71d6;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+@media (min-width: 901px) {
+  .sp_only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .pc_only {
+    display: none !important;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.h_img {
+  display: block;
+  width: auto;
+}
+
+.mb_l {
+  margin-bottom: 80px !important;
+}
+
+@media (max-width: 900px) {
+  .mb_l {
+    margin-bottom: 40px !important;
+  }
+}
+
+.mb_m {
+  margin-bottom: 60px !important;
+}
+
+@media (max-width: 900px) {
+  .mb_m {
+    margin-bottom: 30px !important;
+  }
+}
+
+.mb_s {
+  margin-bottom: 20px !important;
+}
+
+@media (max-width: 900px) {
+  .mb_s {
+    margin-bottom: 10px !important;
+  }
+}
+
+/*======================================================
+
+
+
+======================================================*/
+header {
+  padding: 10px;
+}
+
+header a {
+  display: inline-block;
+  margin: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.wrap_inner {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sec {
+  margin-bottom: 50px;
+}
+
+.sourceview {
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+  margin-bottom: 5px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.sourceview pre {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 0.8em;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+h2 {
+  padding: 0 10px;
+  border-left: 5px orange solid;
+  margin-bottom: 1em;
+}
+
+.point {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.explain {
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+.task {
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #ddd;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

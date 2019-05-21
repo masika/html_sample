@@ -1,0 +1,204 @@
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>授業用サンプルファイル</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/carousel/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./hello_html.html">1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./hello_css.html">2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">3</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#077"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>This is a sample page</h1>
+            <p>このページはサンプル用にBootStrapのサイトからとってきたものを改変したものです。</p>
+            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.3/examples/carousel/" target="_blank" role="button">オリジナルページ</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another Examples</h1>
+            <p>他にも色々なサンプルがあります</p>
+            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.3/examples/" target="_blank" role="button">Examples</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style='background-color:rgb(39, 68, 95);'>
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Carousel</h1>
+            <p>ここはカルーセルです。カルーセルとは回転木馬のことで、要するにスライドショーです。<br>
+            JavaScriptが使われていますが制作者は決まったclass名をつければいいだけです。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        
+        <h2>レスポンシブ</h2>
+        <p>この部分はウィンドウサイズを狭めていくと３列が１列になります。<br>Bootstrapでは横幅を12分割したグリッドに沿ってレイアウトを柔軟に変更できます。</p>
+        <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/layout/overview/" role="button">Layout &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+       
+        <h2>コンポーネント</h2>
+        <p>ボタンやナビゲーション、カードなどよく使う汎用的な部品が用意されています。</p>
+        <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/components/" role="button">Compornents &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        
+        <h2>ユーティリティ</h2>
+        <p>ボーダー、パディング、マージン、色などCSSで指定できる細かな設定がclass名から指示できます。</p>
+        <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.3/utilities/" role="button">Utilities &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">このエリアは12等分した時の7の幅になります。</span></h2>
+        <p class="lead">
+          class="col-md-7"の指定がしてあります。ウィンドウ幅がmdつまり768pxより小さくなった場合は一列になります。<br>
+          グレーのエリアは5の幅です
+        </p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-6">
+          <h2 class="featurette-heading">このエリアは12等分した時の6の幅になります。</span></h2>
+          <p class="lead">
+            class="col-md-6"の指定がしてあります。ウィンドウ幅がmdつまり768pxより小さくなった場合は一列になります。<br>
+            グレーのエリアは6の幅です
+          </p>
+        </div>
+        <div class="col-md-6">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+        </div>
+      </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-9">
+          <h2 class="featurette-heading">このエリアは12等分した時の9の幅になります。</span></h2>
+          <p class="lead">
+            class="col-md-9"の指定がしてあります。ウィンドウ幅がmdつまり768pxより小さくなった場合は一列になります。<br>
+            グレーのエリアは3の幅です
+          </p>
+        </div>
+        <div class="col-md-3">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+        </div>
+      </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="https://getbootstrap.com/">Bootstrap</a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

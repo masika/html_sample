@@ -1,0 +1,30 @@
+@mixin em_txt($color:#666) {
+  display:inline-block;
+  margin: 0 1em;
+  padding:0 2em;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  
+  color:$color;
+
+  &:after,
+  &:before{
+      content:"";
+      display: block;
+      height:2em;
+      width:0.15em;
+      background-color: $color;
+      position: absolute;
+      transform: rotate(70deg);
+  }
+
+  &:after{
+      right:0;
+      bottom:-0.5em;
+  }
+  &:before{
+      left:0;
+      top:-0.5em;
+  }
+}

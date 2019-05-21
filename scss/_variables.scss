@@ -1,0 +1,37 @@
+
+$breakpoints: (
+    xxs:320px,
+    xs:480px,
+    sm:600px,
+    md:900px,
+    lg:1200px,
+    xl:1320px
+);
+
+$serif:"Yu Mincho", "YuMincho", serif;
+$yu-sans-serif:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$hiragino-sans-serif:"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+//$noto-sans-serif:'Noto Sans JP', sans-serif;
+
+$vermilion:rgb(233,74,32);
+$blue_green:rgb(0,120,137);
+$dark_red:rgb(76,44,14);
+$black_red:rgb(47,39,37);
+$black:rgb(35,24,21);
+
+$light_gray:#f2f2f2;
+
+.txt_hide{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+

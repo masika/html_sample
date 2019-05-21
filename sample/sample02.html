@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サンプル</title>
+    <style>
+        h1{
+            font-size: 20px;
+        }
+
+        body{
+            background-color: #ccc;
+        }
+
+        .groupe{
+            background-color: rgb(255,255,255);
+            padding: 30px;
+            max-width:300px;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 100%;
+            height:auto;
+            display: block;
+        }
+
+        .headstyle{
+            color:rgb(0,0,255);
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/sample.css">
+</head>
+<body>
+    <h1>これはサンプルのページです</h1>
+    <div class='groupe'>
+        
+        <p class='headstyle'>
+            CSSはhead内に書くことができます。
+        </p>
+        
+        <p style='color:rgb(255,0,0);font-weight: bold;'>
+            CSSはstyle属性に書くことができます。
+        </p>
+
+        <p class='externalstyle'>
+            CSSは外部ファイルに書くことができます。(headタグ内でcssファイル読み込み)   
+        </p>
+        
+        <p style='border: 1px solid #ddd;padding: 5px;'>
+            <img src="./images/build.jpg">
+        </p>
+
+
+    </div>
+
+    <ol>
+        <li>headタグ内のstyleタグの値を変えてみましょう</li>
+        <li>pタグのstyle属性の値を変えてみましょう</li>
+        <li>./css/sample.cssの値を変えてみましょう</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML/CSS/JavaScript入門</title>
+    <!-- CSS追加 -->
+    <link rel="stylesheet" href="./css/ress.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    
+    <header>
+        <a href='hello_html.html'>1</a>
+        <a href='hello_css.html'>2</a>
+        <a href='hello_bootstrap.html'>3</a>
+    </header>
+
+    <div id='wrapper'>
+        <div class='wrap_inner'>
+    <h1>Hello HTML/CSS</h1>
+
+    <nav>
+        <ul>
+            <li><a href='#html_sec'>HTMLとは</a></li>
+            <li><a href='#css_sec'>CSSとは</a></li>
+            <li><a href='#js_sec'>JavaScriptとは</a></li>
+        </ul>
+    </nav>
+
+<hr>
+    
+
+<!-- HTMLの話 -->
+    <section id='html_sec' class='sec'>
+        <div class='point'>
+            <h2>HTMLとは</h2>
+            <div class='explain'>
+                HTMLは文書の書き方のひとつです。<br>
+                現在はhtml5というバージョンが広く採用されています。<b>(拡張子は.html)</b><br>
+                HTMLは主にブラウザで表示され、制作にはコードエディター(テキストエディター)が使われます。<br>
+                HTML文書を書くことや書き方をマークアップといい、このマークアップによって構造化された文書になります。
+            </div>
+        </div>
+
+        <div class='point'>
+            <h3>HTMLで何ができるか</h3>
+            <ul>
+                <li>画像やリンクや動画・音声などを配置することができます。</li>
+                <li>テキストを改行、グループ分け、強調したりすることができます。</li>
+            </ul>
+        </div>
+
+        <div class='point'>
+            <h3>記述例</h3>
+<div class="sourceview">
+<pre class="brush: html;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;サンプル&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;これはサンプルのページです&lt;/h1&gt;
+    &lt;div&gt;
+        divタグで囲むとそこはグループになります。&lt;br&gt;
+        この場合囲むというのは&amp;lt;div&amp;gt;と&amp;lt;/div&amp;gt;の間に記述するということです。&lt;br&gt;
+        改行はbrタグです。&lt;br&gt;
+        brタグは囲む必要がありません。&lt;br&gt;
+        &lt;a href=&#039;https://webliker.info/46840/&#039; target=&#039;_blank&#039;&gt;参考リンク&lt;/a&gt;
+        
+        &lt;p&gt;
+            pタグで囲むと段落です。
+        &lt;/p&gt;
+        
+        &lt;p&gt;
+            &lt;img src=&quot;./images/build.jpg&quot;&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;ol&gt;
+        &lt;li&gt;テキストを書き換えてみよう&lt;/li&gt;
+        &lt;li&gt;リンクを書き換えてみよう&lt;/li&gt;
+        &lt;li&gt;画像のソースを書き換えてみよう&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+            <a href='./sample/sample01.html' target='_blank'>ブラウザで見るとこのようになります。</a>
+            
+        </div>
+
+        <p class='task'>上記のファイルは./sample/sample01.htmlです。コードエディターで開いて内容を編集しブラウザで確認しましょう。</p>
+        
+        <div class='point'>
+            <div class='add'>
+                <h3>備考</h3>
+                ところでこのページもhtmlで書かれています<br>
+                ただしこのページは皆さんがよく見るページとは違ってデザインがなされていないように感じるのではないでしょうか？<br>
+                実はhtmlだけではあまり見た目を変えることはできません。<br>
+                <small>実際はマークアップの仕方によって文字のサイズやリンクの色などが変わったりしますがこれはブラウザの解釈によって最低限の修飾がされているだけです。（ブラウザデフォルトCSS）</small><br>
+
+                ではデザインをするにはどうすればいいのでしょうか。<br>
+                ここで登場するのがCSSです。<br>
+
+                <!-- <a href='hello_css.html'>このページにCSSを追加したものを見てみましょう。</a> -->
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- CSSの話 -->
+    <section id='css_sec' class='sec'>
+        <div class='point'>
+            <h2>CSSとは</h2>
+            <div class='explain'>
+                CSSはHTMLの見た目を変更するための言語です。<br>
+                ブラウザによって若干の違いがありますがCSS3というバージョンが広く採用されています。<b>(拡張子は.css)</b><br>
+                CSSもコードエディターで制作します。
+            </div>
+        </div>
+
+        <div class='point'>
+            <h3>CSSで何ができるか</h3>
+            <ul>
+                <li>html要素のサイズ、色、位置の設定</li>
+                <li>マウスが重なった時など、インタラクティブな見た目の変更</li>
+                <li>背景画像の設定、要素の追加</li>
+                <li>CSSアニメーション、トランジション</li>
+                <li>ウィンドウサイズに合わせたデザインの変更（レスポンシブ）</li>
+            </ul>
+        </div>
+
+        <div class='point'>
+            <h3>記述例</h3>
+<div class="sourceview">
+<pre class="brush: html;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;サンプル&lt;/title&gt;
+    &lt;style&gt;
+        h1{
+            font-size: 20px;
+        }
+
+        body{
+            background-color: #ccc;
+        }
+
+        .groupe{
+            background-color: rgb(255,255,255);
+            padding: 30px;
+            max-width:300px;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 100%;
+            height:auto;
+            display: block;
+        }
+
+        .headstyle{
+            color:rgb(0,0,255);
+        }
+    &lt;/style&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/sample.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;これはサンプルのページです&lt;/h1&gt;
+    &lt;div class=&#039;groupe&#039;&gt;
+        
+        &lt;p class=&#039;headstyle&#039;&gt;
+            CSSはhead内に書くことができます。
+        &lt;/p&gt;
+        
+        &lt;p style=&#039;color:rgb(255,0,0);font-weight: bold;&#039;&gt;
+            CSSはstyle属性に書くことができます。
+        &lt;/p&gt;
+
+        &lt;p class=&#039;externalstyle&#039;&gt;
+            CSSは外部ファイルに書くことができます。(headタグ内でcssファイル読み込み)   
+        &lt;/p&gt;
+        
+        &lt;p style=&#039;border: 1px solid #ddd;padding: 5px;&#039;&gt;
+            &lt;img src=&quot;./images/build.jpg&quot;&gt;
+        &lt;/p&gt;
+
+
+    &lt;/div&gt;
+
+    &lt;ol&gt;
+        &lt;li&gt;headタグ内のstyleタグの値を変えてみましょう&lt;/li&gt;
+        &lt;li&gt;pタグのstyle属性の値を変えてみましょう&lt;/li&gt;
+        &lt;li&gt;./css/sample.cssの値を変えてみましょう&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+            <a href='./sample/sample02.html' target='_blank'>ブラウザで見るとこのようになります。</a>
+        </div>
+
+        
+        <div class='point'>
+            <div class='add'>
+                <h3>備考</h3>
+                htmlとCSSがあれば平面上で思いつくほとんどのデザインをすることができます。<br>
+                CSSはここ数年で使える機能も増えてきたのでちょっとしたアニメなども表現できます。<br>
+                ただしあくまでもレイアウト等のデザインのための言語なのでユーザーの操作に合わせた処理や計算はあまりできません。<br>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+<!-- JSの話 -->
+    <section id='js_sec' class='sec'>
+        <div class='point'>
+            <h2>JavaScriptとは</h2>
+            <div class='explain'>
+                JavaScriptはブラウザ上で動作するプログラミング言語です。<b>(拡張子は.js)</b><br>
+                コードエディタで書くことができます。<br>
+            </div>
+        </div>
+
+        <div class='point'>
+            <div class='add'>
+                <h3>備考</h3>
+                この授業ではJavaScriptの書き方は教えません。<br>
+                ただし既存のライブラリやフレームワークを使うと簡単に、あるいは意識せずに利用することも可能です。<br>
+
+                <a href='hello_bootstrap.html'>Bootstrapで確認</a>
+            </div>
+        </div>
+
+    </section>
+
+
+<footer>
+
+</footer>
+</div>
+</div>
+<!-- JS追加 -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
