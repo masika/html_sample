@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML/CSS/JavaScript入門</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href='hello_html.html'>1</a>
-        <a href='hello_css.html'>2</a>
-        <a href='hello_bootstrap.html'>3</a>
+      <a href="hello_html.html">1</a>
+      <a href="hello_css.html">2</a>
+      <a href="hello_bootstrap.html">3</a>
     </header>
 
     <h1>Hello HTML</h1>
 
     <nav>
-        <ul>
-            <li><a href='#html_sec'>HTMLとは</a></li>
-            <li><a href='hello_css.html#css_sec'>CSSとは</a></li>
-            <li><a href='hello_css.html#js_sec'>JavaScriptとは</a></li>
-        </ul>
+      <ul>
+        <li><a href="#html_sec">HTMLとは</a></li>
+        <li><a href="hello_css.html#css_sec">CSSとは</a></li>
+        <li><a href="hello_css.html#js_sec">JavaScriptとは</a></li>
+      </ul>
     </nav>
 
-<hr>
-    
-<!-- HTMLの話 -->
-    <section id='html_sec'>
-        <div class='point'>
-            <h2>HTMLとは</h2>
-            <div class='explain'>
-                HTMLは文書の書き方のひとつです。<br>
-                現在はhtml5というバージョンが広く採用されています。<b>(拡張子は.html)</b><br>
-                HTMLは主にブラウザで表示され、制作にはコードエディター(テキストエディター)が使われます。<br>
-                HTML文書を書くことや書き方をマークアップといい、このマークアップによって構造化された文書になります。
-            </div>
-        </div>
+    <hr />
 
-        <div class='point'>
-            <h3>HTMLで何ができるか</h3>
-            <ul>
-                <li>画像やリンクや動画・音声などを配置することができます。</li>
-                <li>テキストを改行、グループ分け、強調したりすることができます。</li>
-            </ul>
+    <!-- HTMLの話 -->
+    <section id="html_sec">
+      <div class="point">
+        <h2>HTMLとは</h2>
+        <div class="explain">
+          HTMLは文書の書き方のひとつです。<br />
+          現在はhtml5というバージョンが広く採用されています。<b
+            >(拡張子は.html)</b
+          ><br />
+          HTMLは主にブラウザで表示され、制作にはコードエディター(テキストエディター)が使われます。<br />
+          HTML文書を書くことや書き方をマークアップといい、このマークアップによって構造化された文書になります。
         </div>
+      </div>
 
-        <div class='point'>
-            <h3>記述例</h3>
-<div class="sourceview">
-<pre class="brush: html;">
+      <div class="point">
+        <h3>HTMLで何ができるか</h3>
+        <ul>
+          <li>画像やリンクや動画・音声などを配置することができます。</li>
+          <li>テキストを改行、グループ分け、強調したりすることができます。</li>
+        </ul>
+      </div>
+
+      <div class="point">
+        <h3>記述例</h3>
+        <div class="sourceview">
+          <pre class="brush: html;">
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;ja&quot;&gt;
 &lt;head&gt;
@@ -80,42 +82,42 @@
     &lt;/ol&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-</div>
-
-            <a href='./sample/sample01.html' target='_blank'>ブラウザで見るとこのようになります。</a>
-            
+</pre
+          >
         </div>
 
-        <div class='point'>
-            <h3>練習</h3>
-            <p>上記のファイルは./sample/sample01.htmlです。コードエディターで開いて内容を編集しブラウザで確認しましょう。</p>
+        <a href="./sample/sample01.html" target="_blank"
+          >ブラウザで見るとこのようになります。</a
+        >
+      </div>
+
+      <div class="point">
+        <h3>練習</h3>
+        <p>
+          上記のファイルは./sample/sample01.htmlです。コードエディターで開いて内容を編集しブラウザで確認しましょう。
+        </p>
+      </div>
+
+      <div class="point">
+        <div class="add">
+          <h3>備考</h3>
+          ところでこのページもhtmlで書かれています<br />
+          ただしこのページは皆さんがよく見るページとは違ってデザインがなされていないように感じるのではないでしょうか？<br />
+          実はhtmlだけではあまり見た目を変えることはできません。<br />
+          <small
+            >実際はマークアップの仕方によって文字のサイズやリンクの色などが変わったりしますがこれはブラウザの解釈によって最低限の修飾がされているだけです。（ブラウザデフォルトCSS）</small
+          ><br />
+
+          ではデザインをするにはどうすればいいのでしょうか。<br />
+          ここで登場するのがCSSです。<br />
+
+          <a href="hello_css.html"
+            >このページにCSSを追加したものを見てみましょう。</a
+          >
         </div>
-        
-        <div class='point'>
-            <div class='add'>
-                <h3>備考</h3>
-                ところでこのページもhtmlで書かれています<br>
-                ただしこのページは皆さんがよく見るページとは違ってデザインがなされていないように感じるのではないでしょうか？<br>
-                実はhtmlだけではあまり見た目を変えることはできません。<br>
-                <small>実際はマークアップの仕方によって文字のサイズやリンクの色などが変わったりしますがこれはブラウザの解釈によって最低限の修飾がされているだけです。（ブラウザデフォルトCSS）</small><br>
-
-                ではデザインをするにはどうすればいいのでしょうか。<br>
-                ここで登場するのがCSSです。<br>
-
-                <a href='hello_css.html'>このページにCSSを追加したものを見てみましょう。</a>
-            </div>
-        </div>
-
+      </div>
     </section>
 
-
-
-
-
-<footer>
-
-</footer>
-
-</body>
+    <footer></footer>
+  </body>
 </html>
